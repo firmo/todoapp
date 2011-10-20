@@ -1,0 +1,28 @@
+en:
+  menu:
+    sign_in: Sign In
+    sign_out: Sign Out
+    sign_up: Sign Up
+
+  actions:
+    create: Create
+    destroy: Destroy
+    edit: Edit
+    new: New
+    update: Update
+
+  are_you_sure: Are you sure?
+  add_item: Add Item
+  list_created: Successfully created List
+  unwatch: Unwatch
+  watch: Watch
+
+  flash:
+    actions:
+      create:
+        notice: "%{resource_name} was successfully created."
+      update:
+        notice: "%{resource_name} was successfully updated."
+      destroy:
+        notice: "%{resource_name} was successfully destroyed."
+        alert: "%{resource_name} could not be destroyed."

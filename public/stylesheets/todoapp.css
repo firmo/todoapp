@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+#menu_div {
+  height: 50px;
+}
+
+#menu_div ul {
+  padding: 0;
+}
+
+#menu_div li {
+  display: inline;
+  padding: 0 5px;
+}
+
+img.small_avatar {
+  max-height: 50px;
+}

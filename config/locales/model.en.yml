@@ -1,0 +1,17 @@
+en:
+  activerecord:
+    models:
+      item:
+        one: Item
+        other: Items
+      list:
+        one: List
+        other: Lists
+
+    attributes:
+      item:
+        description: Description
+        completed: Completed
+      list:
+        name: Name
+        public: Public

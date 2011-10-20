@@ -1,0 +1,20 @@
+<%= form_for @list do |f| %>
+  <%= render :partial => "shared/errors", :locals => { :obj => @list } %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :public %>?
+    <%= f.check_box :public %>
+  </div>
+
+  <div id="items">
+  </div>
+
+  <%= add_item_link(t("add_item"), f) %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<div id="menu_div">
+  <ul>
+    <% if user_signed_in? %>
+      <% unless current_user.avatar.url.nil? %>
+        <%= image_tag current_user.avatar.url, :max_height => "50px", :class => "small_avatar" %>
+      <% end %>
+      <li>
+        <%= current_user.email %>
+      </li>
+      <li>
+        <%= link_to t("menu.create_list"), new_list_path %>
+      </li>
+      <li>
+        <%= link_to t("menu.edit_account"), edit_user_registration_path %>
+      </li>
+      <li>
+        <%= link_to t("menu.search_lists"), lists_path %>
+      </li>
+      <li>
+        <%= link_to t("menu.my_lists"), user_lists_path(current_user) %>
+      </li>
+      <li>
+        <%= link_to t("menu.my_watched_lists"), user_user_lists_path(current_user) %>
+      </li>
+      <li>
+        <%= link_to t("menu.sign_out"), destroy_user_session_path, :method => :delete %>
+      </li>
+    <% else %>
+      <li>
+        <%= link_to t("menu.sign_in"), new_user_session_path %>
+      </li>
+      <li>
+        <%= link_to t("menu.sign_up"), new_user_registration_path %>
+      </li>
+    <% end %>
+  </ul>
+</div>
